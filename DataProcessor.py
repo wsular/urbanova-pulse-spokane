@@ -12,6 +12,24 @@ Author: Marissa Grubbs, Washington State University, May 2019.
 
 Contact: Von P. Walden, Washington State University, v.walden@wsu.edu
 '''
+#%% Necessary Python imports
+
+import requests
+import json
+
+import pandas as pd
+import numpy as np
+from datetime import datetime, date, timedelta
+from dateutil.rrule import rrule, DAILY
+
+import xarray as xr
+import matplotlib.pyplot as plt
+
+import nltk
+from nltk.corpus import stopwords
+
+from wordcloud import WordCloud, STOPWORDS
+
 #%%
 #parsing through returned json to make an organized dataframe with the relevant information
 created_at = []  
